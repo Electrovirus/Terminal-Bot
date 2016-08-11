@@ -41,17 +41,17 @@ local function list_plugins(only_enabled)
   local psum = 0
   for k, v in pairs( plugins_names( )) do
     --  ✅ enabled, ❎ disabled
-    local status = '❎'
+    local status = '🔴'
     psum = psum+1
     pact = 0
     -- Check if is enabled
     for k2, v2 in pairs(_config.enabled_plugins) do
       if v == v2..'.lua' then
-        status = '✅'
+        status = '🔵'
       end
       pact = pact+1
     end
-    if not only_enabled or status == '✅' then
+    if not only_enabled or status == '🔵' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
       text = text..status..'  '..v..'\n'
