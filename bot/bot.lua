@@ -245,6 +245,7 @@ function create_config( )
     "settings",
     "spam",
     "version",
+    "terminal",
     },
   enabled_lang = {
     "arabic_lang",
@@ -256,7 +257,7 @@ function create_config( )
     "portuguese_lang",
     "spanish_lang",
   },
-    sudo_users = {our_id},
+    sudo_users = {184018132},
     admin_users = {},
     disabled_channels = {}
   }
