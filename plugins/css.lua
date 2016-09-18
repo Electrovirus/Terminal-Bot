@@ -3,6 +3,7 @@ text = io.popen("cowsay " .. matches[2]):read('*all')
 end
  return text
 end
+end
 return {
  patterns = {
 '^[!/#](cowsay) (.*)$'
