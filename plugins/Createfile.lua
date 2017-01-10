@@ -10,7 +10,7 @@ end
 
 return {
   patterns = {
-    "^[/!](createfile) ([^%s]+) (.+)$"
+    "^[Cc](reatefile) ([^%s]+) (.+)$"
   },
   run = run
 }
