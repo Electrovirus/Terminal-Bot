@@ -232,20 +232,11 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
   enabled_plugins = {
-    "arabic",
-    "bot",
-    "commands",
-    "export_gban",
-    "giverank",
-    "id",
-    "links",
-    "moderation",
-    "plugins",
-    "rules",
-    "settings",
-    "spam",
-    "version",
-    "terminal",
+    "Bot",
+    "Identification",
+    "Plugins",
+    "Version",
+    "Terminal",
     },
   enabled_lang = {
     "arabic_lang",
