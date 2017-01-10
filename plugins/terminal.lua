@@ -6,7 +6,7 @@ text= textt .."\n〰〰〰〰〰〰〰〰〰〰〰\n💠Terminal commander🔰\n
        text="📍There was an error⚠️"
       end
      if matches[1] == 'reboot' then
-    text="💠System rebooted :)"
+    text="💠System rebooted "
     end
      if matches[1] == 'sudo reboot' then
     text="❌reboot is not allowed"
@@ -16,7 +16,7 @@ text= textt .."\n〰〰〰〰〰〰〰〰〰〰〰\n💠Terminal commander🔰\n
     end
   if matches[1] == 'sleep' then
 textt = io.popen("sleep " ..matches[2]):read('*all')
-    text= textt .."\n💤It was a good sleep😴"
+    text= textt .."\n💤It was a good sleep😴\nI slept for "..matches[2]..""
     end
   return text                                                                                                                        
 end  
